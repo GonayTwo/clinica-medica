@@ -136,44 +136,20 @@ figcaption{
 }
 /*RESPONSIVIDADE*/
 @media (max-width:425px){
-
-    .topo{
-        height: 150px;
-        flex-direction: column;
-        justify-content: space-around;   
-    }
-    .menu-topo{
-        width: 90%;
-        border-top: 1px solid gray;
-        display: flex;
-        justify-content: center;
-    }
-    .banner-home{
-        background-size: contain;
-        height: 200px;
-    }
+    .topo{height: 150px;flex-direction: column;justify-content: space-around;}
+    .menu-topo{width: 90%;border-top: 1px solid gray;display: flex;justify-content: center;}
+    .banner-home{background-size: contain;height: 200px;}
     .titulo-principal{padding-top: 70px;font-size: 14px;}
     .imagem-sobre{display: none;}
     .lista-sobre{padding: 0 10px;}
-    .cards-especialidade{
-        flex-flow: column nowrap;
-        align-items: center;
-        justify-content: space-around;
-    }
-    .card-especialidade{
-        width: 300px;
-        margin-top: 30px ;
-    }
+    .cards-especialidade{flex-flow: column nowrap;align-items: center;justify-content: space-around;}
+    .card-especialidade{width: 300px;margin-top: 30px ;}
 }
 /*RESPONSIVIDADE 2*/
 @media (max-width:768px){
     .imagem-sobre{display: none;}
     .banner-home{height: 400px;}
-    .cards-especialidade{
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: space-around;
-    }
+    .cards-especialidade{flex-wrap: wrap;align-items: center;justify-content: space-around;}
     .card-especialidade{margin-bottom: 25px;}
     .titulo-principal{padding-top: 170px;font-size: 18px;}
 }

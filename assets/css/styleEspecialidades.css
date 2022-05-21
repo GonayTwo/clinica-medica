@@ -1,0 +1,132 @@
+/*ESTILOS GLOBAIS*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans Pro',sans-serif;
+}
+.texto-negrito{
+    font-weight: bold;
+}
+.texto-normal{
+    font-weight: normal;
+}
+.texto-branco{
+    color: #fff;
+}
+header{
+    width: 100%;
+    background-color:#00CBD1 ;
+}
+.area{
+    max-width: 1024px;
+    margin: auto;
+}
+.main{
+    width: 100%;
+}
+.titulo-paragrafo{
+    color: #473F3A;
+    text-align: center;
+    padding: 20px 0;
+}
+.titulo-paragrafo h2{
+    margin: 20px 0;
+}
+footer{
+    width: 100%;
+    background-color: #0C6E71;
+}
+/*AREA TOPO*/
+.topo{
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo-topo img{
+    height: 70px;
+}
+.menu-topo a{
+    text-decoration: none;
+    font-size: 18px;
+    margin: 0 5px;
+}
+.menu-topo a:hover{
+    color: #004b4c;
+}
+/*AREA CONTEUDO*/
+.links-especialidade nav{
+    margin: 10px 0;
+    text-align: center;
+}
+.links-especialidade a{
+    text-decoration: none;
+    color: #000;
+    border-bottom: 2px solid #00CBD1;
+    margin: 10px;
+    font-size: 18px;
+}
+.links-especialidade a:hover{
+    color: #004b4c;
+}
+.titulo-especialidades{
+    text-align: center;
+    margin-top: 25px;
+    color: #473F3A;
+}
+.imagem-medico img{
+    width: 300px;
+    height: 200px;
+}
+.tabela-horarios{
+    display: flex;
+    flex-flow: row nowrap;
+}
+.tabela{
+    width: calc(100% - 300px);
+}
+.tabela table{
+    width: 100%;
+    border-collapse: collapse;
+}
+.tabela thead{
+    background-color: #00CBD1;
+    line-height: 35px;
+}
+.tabela tbody{
+    line-height: 55px;
+    text-align: center;
+}
+.tabela tbody tr:nth-child(2n+1){
+    background-color: #CDCDCD;
+}
+.tabela tbody tr:nth-child(2n+2){
+    background-color: #F1F1F1;
+}
+/*AREA FOOTER*/
+.rodape{
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.logo-rodape{
+    padding: 15px 0;
+}
+.textos-rodape p{
+    text-align: center;
+    padding-bottom: 15px;
+}
+/*RESPONSIVIDADE*/
+@media (max-width:425px){
+    .topo{height: 150px;flex-direction: column;justify-content: space-around;}
+    .menu-topo{width: 90%;border-top: 1px solid gray;display: flex;justify-content: center;}
+    .imagem-medico{display: none;}
+    .tabela{width: 80%;}
+}
+@media (max-width:768px){
+    .imagem-medico{display: none;}
+    .tabela{width: 100%;}
+}
